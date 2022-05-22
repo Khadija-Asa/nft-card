@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0d192b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.card {
+  background-color: #14253d;
+  border-radius: .5rem;
+  margin: 0 auto;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card .card-image img {
+  border-radius: .5rem;
+  width: 100%;
+}
+
+.card .card-title {
+  font-size: 16px;
+}
+
+.card .card-title h1 {
+  color: white;
+  font-size: 22px;
+}
+
+.card .card-title p {
+  color: #8bacda;
+  font-weight: 300;
+}
+
+.card .card-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: middle;
+}
+
+.card .card-subtitle img, .card .card-subtitle span {
+  vertical-align: middle;
+}
+
+.card .card-subtitle .subtitle-price {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+.card .card-subtitle .subtitle-date {
+  color: #8bacda;
+  font-weight: 300;
+}
+
+.card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.card .card-footer img {
+  border: 1px solid white;
+  border-radius: 2rem;
+  height: 30px;
+  width: 30px;
+}
+
+.card .card-footer h2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8bacda;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card .card-footer h2 a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
