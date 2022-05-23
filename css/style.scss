@@ -37,30 +37,57 @@ body {
   justify-content: center;
 }
 
-hr {
-  margin: 1rem 0;
-}
-
 // Style
 
 .card {
   background-color: $bg-2;
   border-radius: .5rem;
+  flex-basis: 325px;
   margin: 0 auto;
   padding: 20px;
   margin: 20px;
+  box-shadow: -24px 8px 59px 14px rgba(2, 19, 54, 0.95);
+    -webkit-box-shadow: -24px 8px 59px 14px rgba(2, 16, 48, 0.95);
+    -moz-box-shadow: -24px 8px 59px 14px rgba(3, 19, 56, 0.95);
 
-  .card-image img {
-    border-radius: .5rem;
-    width: 100%;
+  .card-image {
+    position: relative;
+    cursor: pointer;
+    
+    img {
+      border-radius: .5rem;
+      width: 100%;
+    }
   }
 
+  .card-image:hover::before {
+    align-items: center;
+    background-color: $cyan;
+    border-radius: .5rem;
+    content: url(./../assets/images/icon-view.svg);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .main-image:hover {
+    opacity: .4;
+  }
+  
   .card-title {
-    font-size: 16px;
+    font-size: 15px;
 
-    h1 {
+    a {
+      font-size: 20px;
       color: $white;
-      font-size: 22px;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+
+    a:hover {
+      color: $cyan;
     }
     
     p {
@@ -82,10 +109,18 @@ hr {
       color: $cyan;
       font-weight: 600;
     }
+
     .subtitle-date {
       color: $soft-blue;
       font-weight: 300;
     }
+
+  }
+  
+  hr {
+    margin: 1rem 0;
+    border-top-color: $soft-blue;
+    border-bottom: 0;
   }
 
   .card-footer {
@@ -108,6 +143,12 @@ hr {
 
       a {
         color: $white;
+        cursor: pointer;
+        margin-left: 5px;
+      }
+
+      a:hover {
+        color: $cyan;
       }
     }
   }

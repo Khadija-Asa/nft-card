@@ -34,16 +34,22 @@ body {
           justify-content: center;
 }
 
-hr {
-  margin: 1rem 0;
-}
-
 .card {
   background-color: #14253d;
   border-radius: .5rem;
+  -ms-flex-preferred-size: 325px;
+      flex-basis: 325px;
   margin: 0 auto;
   padding: 20px;
   margin: 20px;
+  box-shadow: -24px 8px 59px 14px rgba(2, 19, 54, 0.95);
+  -webkit-box-shadow: -24px 8px 59px 14px rgba(2, 16, 48, 0.95);
+  -moz-box-shadow: -24px 8px 59px 14px rgba(3, 19, 56, 0.95);
+}
+
+.card .card-image {
+  position: relative;
+  cursor: pointer;
 }
 
 .card .card-image img {
@@ -51,13 +57,41 @@ hr {
   width: 100%;
 }
 
-.card .card-title {
-  font-size: 16px;
+.card .card-image:hover::before {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00fff7;
+  border-radius: .5rem;
+  content: url(./../assets/images/icon-view.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
 }
 
-.card .card-title h1 {
+.card .main-image:hover {
+  opacity: .4;
+}
+
+.card .card-title {
+  font-size: 15px;
+}
+
+.card .card-title a {
+  font-size: 20px;
   color: white;
-  font-size: 22px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.card .card-title a:hover {
+  color: #00fff7;
 }
 
 .card .card-title p {
@@ -89,6 +123,12 @@ hr {
   font-weight: 300;
 }
 
+.card hr {
+  margin: 1rem 0;
+  border-top-color: #8bacda;
+  border-bottom: 0;
+}
+
 .card .card-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,5 +157,11 @@ hr {
 
 .card .card-footer h2 a {
   color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.card .card-footer h2 a:hover {
+  color: #00fff7;
 }
 /*# sourceMappingURL=style.css.map */
